@@ -21,7 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/sign_up_icon"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/CreateAccount_text">
 
         <TextView
             android:layout_width="match_parent"
@@ -30,7 +31,7 @@
             android:textStyle="bold"
             android:textSize="32sp"
             android:textColor="@color/black"
-            android:textAlignment="center"/>
+            android:textAlignment="center" />
 
         <TextView
             android:layout_width="match_parent"
@@ -38,7 +39,98 @@
             android:text="Create an account to view and manage your notes"
             android:textSize="16sp"
             android:textColor="@color/primary_color"
-            android:textAlignment="center"/>
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CreateAccount_text"
+        android:layout_marginVertical="16dp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:orientation="vertical"
+        android:id="@+id/create_account_form">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="16dp"
+            android:id="@+id/email_edit_text">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="16dp"
+            android:id="@+id/password_edit_text">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:hint="Confirm Password"
+            android:inputType="numberPassword"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner"
+            android:padding="16dp"
+            android:id="@+id/confirm_password_edit_text">
+        </EditText>
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="24dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/progress_bar">
+        </ProgressBar>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="168dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/create_account_btn">
+        </com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_account_form"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:id="@+id/goto_login">
+        </TextView>
     </LinearLayout>
 
 </RelativeLayout>
