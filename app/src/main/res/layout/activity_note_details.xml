@@ -27,6 +27,7 @@
         <ImageButton
             android:layout_width="64dp"
             android:layout_height="64dp"
+            android:background="@color/cardview_shadow_end_color"
             android:src="@drawable/back_box">
         </ImageButton>
 
@@ -81,5 +82,16 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:text="Delete"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:id="@+id/delete_note_btn">
+    </TextView>
 </RelativeLayout>
 
