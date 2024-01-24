@@ -46,7 +46,7 @@ public class NoteDetailsActivity extends AppCompatActivity {
         titleEditText.setText(title);
         contentEditText.setText(content);
         if (isEditMode) {
-            pageTitleTextView.setText("Edit your note");
+            pageTitleTextView.setText("Note Edit");
             // deleteNoteTextViewBtn.setVisibility(View.VISIBLE);
         }
 
