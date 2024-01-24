@@ -16,7 +16,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/addNoteBtn"
-        app:shapeAppearance="oval"
         >
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
