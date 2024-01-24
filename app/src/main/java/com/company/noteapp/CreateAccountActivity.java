@@ -69,7 +69,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                             finish();
                         } else {
                             // Failed to create account
-                            Toast.makeText(CreateAccountActivity.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                            Utility.showToast(CreateAccountActivity.this, task.getException().getLocalizedMessage());
                         }
                     }
                 }
