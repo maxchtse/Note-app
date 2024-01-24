@@ -24,13 +24,6 @@
             android:id="@+id/page_title">
         </TextView>
 
-        <ImageButton
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:background="@color/cardview_shadow_end_color"
-            android:src="@drawable/back_box">
-        </ImageButton>
-
         <com.google.android.material.button.MaterialButton
             android:layout_width="85dp"
             android:layout_height="64dp"
