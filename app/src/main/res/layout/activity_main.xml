@@ -8,6 +8,32 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleBarLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Notes"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true">
+        </TextView>
+
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/menu_box">
+        </ImageButton>
+
+    </RelativeLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
